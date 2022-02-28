@@ -1,0 +1,11 @@
+<div
+  class="btn-wrapper"
+  #btnWrapperEl
+  (mouseenter)="animateBtn()"
+  (mouseleave)="animateBtnRev()"
+>
+  <p class="btn-text" #btnTextEl>{{ btnText | uppercase }}</p>
+  <a class="play-btn" #btnPlayEl
+    ><span class="play-logo"><img [src]="iconSrc" alt="" /></span
+  ></a>
+</div>

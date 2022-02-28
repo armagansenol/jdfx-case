@@ -1,0 +1,95 @@
+<div class="wrapper">
+  <app-header></app-header>
+
+  <section class="banner">
+    <div class="text">
+      <h1>WE WOULD</h1>
+      <h1>
+        <span class="love">LOVE<span class="love-bg">LOVE</span></span> TO HEAR
+      </h1>
+      <h1><span class="from-you">from you.</span></h1>
+    </div>
+    <div class="banner-img">
+      <img
+        class="smile"
+        src="../../assets/img/contact-img/Image 27.png"
+        alt=""
+      />
+      <img
+        class="water"
+        src="../../assets/img/contact-img/Mask Group 4@2x.png"
+        alt=""
+      />
+    </div>
+  </section>
+
+  <section class="contact">
+    <img
+      class="drop-a-line"
+      src="../../assets/img/contact-img/Group 1698.png"
+      alt=""
+    />
+    <div class="contact-wrapper">
+      <div class="row">
+        <h2>HELLO, MY NAME IS</h2>
+        <input
+          class="name-company-input"
+          placeholder="YOUR NAME / COMPANY"
+          type="text"
+        />
+      </div>
+      <div
+        class="row"
+        style="display: flex; flex-direction: column; align-items: flex-start"
+      >
+        <h2>I'M EXCITED TO CONTACT YOUR STUDIO ABOUT</h2>
+        <div class="contact-btns">
+          <button><p>NEW PROJECT</p></button>
+          <button><p>MEDIA INQUIRY</p></button>
+        </div>
+      </div>
+      <div class="row">
+        <h2>REACH ME AT</h2>
+        <input
+          class="reach-me-at-input"
+          placeholder="YOUR MAIL ADDRESS"
+          type="text"
+        />
+      </div>
+      <div class="row" style="margin-bottom: 0">
+        <h2>I'M REACHING OUT ABOUT ...</h2>
+      </div>
+      <div class="row" style="margin-bottom: 46px">
+        <input style="width: 100%" type="text" />
+      </div>
+      <div
+        class="privacy-policy"
+        (click)="isPrivacyClicked = !isPrivacyClicked"
+      >
+        <div class="link">
+          <div class="img-wrapper">
+            <img
+              *ngIf="isPrivacyClicked"
+              [@inOutAnimation0.2]
+              src="../../assets/img/contact-img/Group 1683@2x.png"
+              alt=""
+            />
+          </div>
+          <p>
+            I've read and accepted the <a>Privacy Policy</a> standards of this
+            website.
+          </p>
+        </div>
+        <app-animated-button
+          [btnText]="'send'"
+          [iconSrc]="'../../assets/img/icon-right-long-arrow-white.svg'"
+        ></app-animated-button>
+        <!--         <button *ngIf="isPrivacyClicked" [@inOutAnimation0.2]>
+          <p class="btn-text">SEND</p>
+        </button> -->
+      </div>
+    </div>
+  </section>
+</div>
+
+<app-footer></app-footer>

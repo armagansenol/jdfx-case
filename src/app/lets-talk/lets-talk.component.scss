@@ -1,0 +1,240 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 250px;
+  padding-right: 400px;
+  height: 630px;
+
+  .banner-img {
+    .smile {
+      position: absolute;
+      top: 182px;
+      right: 354px;
+    }
+    .water {
+      position: absolute;
+      top: 77px;
+      right: 0;
+      width: 1193px;
+      z-index: 30;
+    }
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    h1 {
+      font-size: 150px;
+      margin: 0;
+      letter-spacing: 0;
+      line-height: 140px;
+      color: #f8f9fa;
+      font-family: VanguardCF-Bold;
+      position: relative;
+
+      &:nth-child(2) {
+        margin-left: auto;
+      }
+
+      &:nth-child(3) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .love {
+        position: relative;
+        z-index: 5;
+
+        .love-bg {
+          z-index: -1;
+
+          position: absolute;
+          bottom: 6px;
+          left: -5px;
+          line-height: 160px;
+
+          background: -webkit-linear-gradient(
+            #1a5ee0 0%,
+            #1a5ee0 0%,
+            #245cd7 6%,
+            #3f57c1 17%,
+            #6c4f9d 31%,
+            #a9446b 48%,
+            #e63a3b 62%,
+            #f27e31 87%,
+            #f89c2e 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+      .from-you {
+        display: block;
+        font-family: Ageya-Oblique;
+        font-size: 150px;
+        margin: 0;
+        letter-spacing: 0;
+        line-height: 95px;
+        font-weight: 100;
+      }
+    }
+  }
+}
+
+.contact {
+  border: 1px solid #f8f9fa;
+  border-radius: 2rem;
+  margin-top: 112px;
+  position: relative;
+
+  .contact-wrapper {
+    max-width: 1200px;
+    padding: 100px 0 83px 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .drop-a-line {
+    position: absolute;
+    top: -180px;
+    left: 50px;
+    width: 246px;
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  h2 {
+    font-family: VanguardCF-Bold;
+    font-size: 80px;
+    color: #f8f9fa;
+    margin: 0;
+  }
+
+  input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #343434;
+    height: 94px;
+  }
+
+  .name-company-input {
+    width: 588px;
+
+    &::placeholder {
+      font-family: VanguardCF-Bold;
+      font-size: 80px;
+      color: #343434;
+      transform: translateY(30px);
+    }
+  }
+
+  .reach-me-at-input {
+    width: 800px;
+    padding-left: 8rem;
+
+    &::placeholder {
+      font-family: VanguardCF-Bold;
+      font-size: 80px;
+      color: #343434;
+      transform: translateY(30px);
+    }
+  }
+
+  .contact-btns {
+    display: flex;
+    gap: 23px;
+    margin-top: 36px;
+    margin-bottom: 1rem;
+
+    button {
+      padding: 0.25rem 2rem;
+      background: transparent;
+      border: 0.5px solid #f2f2f2;
+      border-radius: 22px;
+      color: #f8f9fa;
+      font-size: 30px;
+      font-family: VanguardCF-Medium;
+
+      p {
+        margin: 0;
+        transform: translateY(-2px);
+      }
+
+      &:hover {
+        background: #f25818;
+        border: 1px solid #f25818;
+      }
+    }
+  }
+
+  .privacy-policy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      padding: 0.25rem 8rem;
+      background: transparent;
+      border: 0.5px solid #f2f2f2;
+      border-radius: 22px;
+
+      .btn-text {
+        margin: 0;
+        transform: translateY(-2px);
+        color: #f8f9fa;
+        font-size: 30px;
+        font-family: VanguardCF-Medium;
+      }
+
+      &:hover {
+        background: #f25818;
+        border: 1px solid #f25818;
+      }
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+
+      cursor: pointer;
+
+      .img-wrapper {
+        border-radius: 50%;
+        border: 1px solid #f25818;
+        width: 90px;
+        height: 90px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 70px;
+        }
+      }
+
+      p {
+        font-family: VisbyCF-DemiBold;
+        font-size: 20px;
+        color: #f8f9fa;
+        margin: 0;
+
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

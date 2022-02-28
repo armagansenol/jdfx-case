@@ -1,0 +1,78 @@
+footer {
+  .footer-wrapper {
+    max-width: 1680px;
+    padding: 0 90px 40px 90px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    gap: 160px;
+  }
+
+  h5 {
+    font-family: VanguardCF-Bold;
+    font-size: 60px;
+    margin: 0 0 2rem 0;
+
+    color: #f8f9fa;
+  }
+
+  p {
+    font-family: VisbyCF-DemiBold;
+    font-size: 1rem;
+
+    color: #f8f9fa;
+  }
+
+  a {
+    font-family: VisbyCF-DemiBold;
+    text-decoration: underline;
+    font-size: 1rem;
+    color: #f8f9fa;
+  }
+
+  .col-1 {
+    width: 25%;
+    margin-right: auto;
+
+    .social {
+      display: flex;
+      gap: 4rem;
+    }
+
+    small {
+      font-family: VisbyCF-DemiBold;
+      color: #f8f9fa;
+      display: block;
+      margin-top: 175px;
+    }
+  }
+
+  .col-2 {
+    width: 330px;
+
+    button {
+      padding: 0.25rem 4rem;
+      background: transparent;
+      border: 0.5px solid #f2f2f2;
+      border-radius: 22px;
+
+      .btn-text {
+        margin: 0;
+        transform: translateY(-2px);
+        color: #f8f9fa;
+        font-size: 30px;
+        font-family: VanguardCF-Medium;
+      }
+
+      &:hover {
+        background: #f25818;
+        border: 1px solid #f25818;
+      }
+    }
+  }
+
+  .col-3 {
+    width: 370px;
+  }
+}

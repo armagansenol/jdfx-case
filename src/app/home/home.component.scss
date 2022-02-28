@@ -1,0 +1,50 @@
+.banner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  .text {
+    position: absolute;
+    flex-basis: 1.5;
+    display: block;
+    color: #f8f9fa;
+    padding-bottom: 7.5rem;
+
+    h6 {
+      color: #f8f9fa;
+      margin: 0;
+      font-size: 35px;
+      font-family: VanguardCF-Regular;
+      letter-spacing: 0;
+      line-height: 37px;
+    }
+
+    h1 {
+      font-size: 207px;
+      margin: 0;
+      letter-spacing: 0;
+      line-height: 165px;
+      font-family: VanguardCF-Bold;
+
+      span {
+        font-family: Ageya-Oblique;
+        font-weight: 100;
+      }
+    }
+
+    .text-bottom {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-top: 4rem;
+    }
+  }
+
+  .jelly {
+    flex-basis: 1;
+
+    display: block;
+    width: 776px;
+    margin-left: auto;
+  }
+}

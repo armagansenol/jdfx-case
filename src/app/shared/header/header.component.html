@@ -1,0 +1,34 @@
+<header>
+  <a routerLink="/home">
+    <img
+      src="../../assets/img/just-design-fx-logo.png"
+      alt="Just Design Fx Logo"
+  /></a>
+
+  <a (click)="animateMenu()" class="menu-btn"
+    >MENU<span>MENU</span>
+    <div class="btn-underline"></div
+  ></a>
+</header>
+
+<!--   animated navigation menu   -->
+<div class="white" #whiteScreen></div>
+<div class="pink" #pinkScreen></div>
+
+<div class="transition-screen" #transitionScreen>
+  <div class="transition-text">
+    <div class="text-wrapper" #textWrapper>
+      <h1>FUTURE</h1>
+      <h1>BRAND</h1>
+      <img src="../../assets/img/Union 1.svg" alt="" />
+    </div>
+  </div>
+</div>
+
+<div class="nav-menu" #navMenu>
+  <div class="nav-menu-text">
+    <a class="nav-menu-item"><span>[</span>TEAM<span>]</span></a>
+    <a class="nav-menu-item">WORKS</a>
+    <a class="nav-menu-item" routerLink="/lets-talk">LET'S TALK</a>
+  </div>
+</div>
